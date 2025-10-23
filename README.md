@@ -18,7 +18,7 @@ It provides **comprehensive test reporting** for both **UI** and **API** tests, 
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-org>/bdd-motor-vehicle-automation.git
+git clone https://github.com/DCS/bdd-motor-vehicle-automation.git
 cd bdd-motor-vehicle-automation
 
 # Install dependencies
