@@ -1,0 +1,396 @@
+{
+  "config": {
+    "configFile": "/Users/sridharkasukurthy/Documents/DCS/playwright.config.js",
+    "rootDir": "/Users/sridharkasukurthy/Documents/DCS/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/playwright-results.xml"
+        }
+      ],
+      [
+        "line",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/sridharkasukurthy/Documents/DCS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/sridharkasukurthy/Documents/DCS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sridharkasukurthy/Documents/DCS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/sridharkasukurthy/Documents/DCS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sridharkasukurthy/Documents/DCS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/sridharkasukurthy/Documents/DCS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "playwright-demo.spec.js",
+      "file": "playwright-demo.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API Test Demo with Playwright",
+          "file": "playwright-demo.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "OpenLibrary API Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 820,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ API Test completed successfully\n"
+                        },
+                        {
+                          "text": "📊 Author: Sachi Rautroy\n"
+                        },
+                        {
+                          "text": "🔑 Key: /authors/OL1A\n"
+                        },
+                        {
+                          "text": "📝 Alternate names count: 13\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-23T05:07:34.669Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "97e8210f8f5f414b95e4-43cac99638b5c180ca40",
+              "file": "playwright-demo.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "Service NSW Website Check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2738,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ UI Test completed successfully\n"
+                        },
+                        {
+                          "text": "📸 Screenshot saved to reports/screenshots/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-23T05:07:34.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "97e8210f8f5f414b95e4-32a55d3afdb9b8e119a5",
+              "file": "playwright-demo.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "OpenLibrary API Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 837,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ API Test completed successfully\n"
+                        },
+                        {
+                          "text": "📊 Author: Sachi Rautroy\n"
+                        },
+                        {
+                          "text": "🔑 Key: /authors/OL1A\n"
+                        },
+                        {
+                          "text": "📝 Alternate names count: 13\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-23T05:07:34.672Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "97e8210f8f5f414b95e4-735762d3de185f57a0ab",
+              "file": "playwright-demo.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "Service NSW Website Check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2990,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ UI Test completed successfully\n"
+                        },
+                        {
+                          "text": "📸 Screenshot saved to reports/screenshots/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-23T05:07:34.669Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "97e8210f8f5f414b95e4-62cd4274f8775790829a",
+              "file": "playwright-demo.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "OpenLibrary API Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 817,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ API Test completed successfully\n"
+                        },
+                        {
+                          "text": "📊 Author: Sachi Rautroy\n"
+                        },
+                        {
+                          "text": "🔑 Key: /authors/OL1A\n"
+                        },
+                        {
+                          "text": "📝 Alternate names count: 13\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-23T05:07:34.674Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "97e8210f8f5f414b95e4-b66bd078b3e6135bf9f6",
+              "file": "playwright-demo.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "Service NSW Website Check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2960,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ UI Test completed successfully\n"
+                        },
+                        {
+                          "text": "📸 Screenshot saved to reports/screenshots/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-23T05:07:35.829Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "97e8210f8f5f414b95e4-d716eff01405084dfccd",
+              "file": "playwright-demo.spec.js",
+              "line": 25,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-23T05:07:34.300Z",
+    "duration": 5054.763,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

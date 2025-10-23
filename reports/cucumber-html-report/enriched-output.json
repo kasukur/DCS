@@ -1,0 +1,352 @@
+{
+  "app": 0,
+  "customMetadata": false,
+  "customData": {
+    "title": "BDD Automation Test Report",
+    "data": [
+      {
+        "label": "Project",
+        "value": "NSW Motor Vehicle & OpenLibrary API Automation"
+      },
+      {
+        "label": "Environment",
+        "value": "Development"
+      },
+      {
+        "label": "Platform",
+        "value": "darwin"
+      },
+      {
+        "label": "Node Version",
+        "value": "v20.11.1"
+      },
+      {
+        "label": "Execution Date",
+        "value": "2025-10-21"
+      },
+      {
+        "label": "Execution Time",
+        "value": "10/21/2025, 10:33:41 PM"
+      }
+    ]
+  },
+  "style": "style.css",
+  "useCDN": false,
+  "hideMetadata": false,
+  "displayReportTime": true,
+  "displayDuration": true,
+  "browser": 2,
+  "name": "",
+  "version": "version",
+  "time": "2025-10-21T11:33:41.279Z",
+  "features": [
+    {
+      "metadata": {
+        "reportTime": "2025/10/21 22:29:59",
+        "browser": {
+          "name": "not known",
+          "version": "not known"
+        },
+        "device": "not known",
+        "platform": {
+          "name": "not known",
+          "version": "not known"
+        }
+      },
+      "description": "  As a tester\n  I want to validate the OpenLibrary Author API response\n  So that I can ensure the API returns correct author information",
+      "elements": [
+        {
+          "description": "",
+          "id": "openlibrary-author-api-testing;validate-author-ol1a-details-from-openlibrary-api",
+          "keyword": "Scenario",
+          "line": 9,
+          "name": "Validate author OL1A details from OpenLibrary API",
+          "steps": [
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 7,
+              "name": "I have initialized the API client",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1310833
+              },
+              "time": "00:00:00.001"
+            },
+            {
+              "arguments": [],
+              "keyword": "When ",
+              "line": 10,
+              "name": "I make a GET request to \"https://openlibrary.org/authors/OL1A.json\"",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:13"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 630992500
+              },
+              "time": "00:00:00.630"
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 11,
+              "name": "the response status code should be 200",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:25"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 312083
+              },
+              "time": "00:00:00.000"
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 12,
+              "name": "the response body should contain \"personal_name\" with value \"Sachi Rautroy\"",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:37"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 351666
+              },
+              "time": "00:00:00.000"
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 13,
+              "name": "the response body should contain \"alternate_names\" array with value \"Yugashrashta Sachi Routray\"",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:62"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 204416
+              },
+              "time": "00:00:00.000"
+            }
+          ],
+          "tags": [],
+          "type": "scenario",
+          "passed": 5,
+          "failed": 0,
+          "notDefined": 0,
+          "skipped": 0,
+          "pending": 0,
+          "ambiguous": 0,
+          "duration": 633171498,
+          "time": "00:00:00.633"
+        }
+      ],
+      "id": "0fe83b30-73c0-43fb-8dc5-685acd215a1a-openlibrary-author-api-testing",
+      "line": 1,
+      "keyword": "Feature",
+      "name": "OpenLibrary Author API Testing",
+      "tags": [],
+      "uri": "features/api/openlibrary_author.feature",
+      "scenarios": {
+        "passed": 1,
+        "failed": 0,
+        "notDefined": 0,
+        "skipped": 0,
+        "pending": 0,
+        "ambiguous": 0,
+        "passedPercentage": "100.00",
+        "failedPercentage": "0.00",
+        "notDefinedPercentage": "0.00",
+        "skippedPercentage": "0.00",
+        "pendingPercentage": "0.00",
+        "ambiguousPercentage": "0.00",
+        "total": 1
+      },
+      "duration": 633171498,
+      "time": "00:00:00.633",
+      "isFailed": false,
+      "isAmbiguous": false,
+      "isSkipped": false,
+      "isNotdefined": false,
+      "isPending": false,
+      "app": 0,
+      "browser": 0,
+      "passed": null,
+      "totalTime": null
+    },
+    {
+      "metadata": {
+        "reportTime": "2025/10/21 22:29:48",
+        "browser": {
+          "name": "not known",
+          "version": "not known"
+        },
+        "device": "not known",
+        "platform": {
+          "name": "not known",
+          "version": "not known"
+        }
+      },
+      "description": "  As a tester\n  I want to validate the OpenLibrary Author API response\n  So that I can ensure the API returns correct author information",
+      "elements": [
+        {
+          "description": "",
+          "id": "openlibrary-author-api-testing;validate-author-ol1a-details-from-openlibrary-api",
+          "keyword": "Scenario",
+          "line": 9,
+          "name": "Validate author OL1A details from OpenLibrary API",
+          "steps": [
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 7,
+              "name": "I have initialized the API client",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 4353875
+              },
+              "time": "00:00:00.004"
+            },
+            {
+              "arguments": [],
+              "keyword": "When ",
+              "line": 10,
+              "name": "I make a GET request to \"https://openlibrary.org/authors/OL1A.json\"",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:13"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 639127749
+              },
+              "time": "00:00:00.639"
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 11,
+              "name": "the response status code should be 200",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:25"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 2313292
+              },
+              "time": "00:00:00.002"
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 12,
+              "name": "the response body should contain \"personal_name\" with value \"Sachi Rautroy\"",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:37"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 4088250
+              },
+              "time": "00:00:00.004"
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 13,
+              "name": "the response body should contain \"alternate_names\" array with value \"Yugashrashta Sachi Routray\"",
+              "match": {
+                "location": "features/step_definitions/api/openlibrary_steps.ts:62"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 3061167
+              },
+              "time": "00:00:00.003"
+            }
+          ],
+          "tags": [],
+          "type": "scenario",
+          "passed": 5,
+          "failed": 0,
+          "notDefined": 0,
+          "skipped": 0,
+          "pending": 0,
+          "ambiguous": 0,
+          "duration": 652944333,
+          "time": "00:00:00.652"
+        }
+      ],
+      "id": "f65b6763-1a9d-4389-b244-ac958ba88d72-openlibrary-author-api-testing",
+      "line": 1,
+      "keyword": "Feature",
+      "name": "OpenLibrary Author API Testing",
+      "tags": [],
+      "uri": "features/api/openlibrary_author.feature",
+      "scenarios": {
+        "passed": 1,
+        "failed": 0,
+        "notDefined": 0,
+        "skipped": 0,
+        "pending": 0,
+        "ambiguous": 0,
+        "passedPercentage": "100.00",
+        "failedPercentage": "0.00",
+        "notDefinedPercentage": "0.00",
+        "skippedPercentage": "0.00",
+        "pendingPercentage": "0.00",
+        "ambiguousPercentage": "0.00",
+        "total": 1
+      },
+      "duration": 652944333,
+      "time": "00:00:00.652",
+      "isFailed": false,
+      "isAmbiguous": false,
+      "isSkipped": false,
+      "isNotdefined": false,
+      "isPending": false,
+      "app": 0,
+      "browser": 0,
+      "passed": null,
+      "totalTime": null
+    }
+  ],
+  "featureCount": {
+    "ambiguous": 0,
+    "failed": 0,
+    "passed": 2,
+    "notDefined": 0,
+    "pending": 0,
+    "skipped": 0,
+    "total": 2,
+    "ambiguousPercentage": "0.00",
+    "failedPercentage": "0.00",
+    "notDefinedPercentage": "0.00",
+    "pendingPercentage": "0.00",
+    "skippedPercentage": "0.00",
+    "passedPercentage": "100.00"
+  },
+  "reportName": "Comprehensive Test Results",
+  "scenarios": {
+    "failed": 0,
+    "ambiguous": 0,
+    "notDefined": 0,
+    "pending": 0,
+    "skipped": 0,
+    "passed": 2,
+    "total": 2,
+    "ambiguousPercentage": "0.00",
+    "failedPercentage": "0.00",
+    "notDefinedPercentage": "0.00",
+    "passedPercentage": "100.00",
+    "pendingPercentage": "0.00",
+    "skippedPercentage": "0.00"
+  },
+  "totalTime": 0
+}

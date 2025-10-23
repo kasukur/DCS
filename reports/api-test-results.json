@@ -1,0 +1,89 @@
+[
+  {
+    "description": "  As a tester\n  I want to validate the OpenLibrary Author API response\n  So that I can ensure the API returns correct author information",
+    "elements": [
+      {
+        "description": "",
+        "id": "openlibrary-author-api-testing;validate-author-ol1a-details-from-openlibrary-api",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validate author OL1A details from OpenLibrary API",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I have initialized the API client",
+            "match": {
+              "location": "features/step_definitions/api/openlibrary_steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1310833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I make a GET request to \"https://openlibrary.org/authors/OL1A.json\"",
+            "match": {
+              "location": "features/step_definitions/api/openlibrary_steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 630992500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "features/step_definitions/api/openlibrary_steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 312083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the response body should contain \"personal_name\" with value \"Sachi Rautroy\"",
+            "match": {
+              "location": "features/step_definitions/api/openlibrary_steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response body should contain \"alternate_names\" array with value \"Yugashrashta Sachi Routray\"",
+            "match": {
+              "location": "features/step_definitions/api/openlibrary_steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204416
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "openlibrary-author-api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OpenLibrary Author API Testing",
+    "tags": [],
+    "uri": "features/api/openlibrary_author.feature"
+  }
+]

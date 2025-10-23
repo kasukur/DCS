@@ -1,0 +1,45 @@
+{
+  "name": "bdd-motor-vehicle-automation",
+  "version": "1.0.0",
+  "description": "BDD automation for NSW Motor Vehicle Stamp Duty Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cucumber-js --world-parameters '{\"headless\": false}'",
+    "test:api": "cucumber-js --config cucumber-api.config.js",
+    "test:ui": "cucumber-js features/motor_vehicle_duty.feature --require features/step_definitions/motor_vehicle_steps.ts --require features/support/world.ts --require features/support/hooks.ts --require-module ts-node/register --format progress",
+    "test:all": "npm run test:api && npm run test:ui",
+    "test:comprehensive": "node test-runner.js",
+    "test:report": "cucumber-js --format html:reports/cucumber-html-report.html --format json:reports/cucumber-report.json",
+    "report:generate": "node report-generator.js",
+    "report:open": "open reports/cucumber-html-report/index.html",
+    "playwright:report": "npx playwright show-report reports/playwright-report",
+    "build": "tsc",
+    "clean": "rm -rf dist reports test-results"
+  },
+  "keywords": [
+    "bdd",
+    "cucumber",
+    "playwright",
+    "automation",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@cucumber/pretty-formatter": "^2.3.0",
+    "@playwright/test": "^1.40.0",
+    "@types/chai": "^5.2.3",
+    "@types/node": "^20.0.0",
+    "axios": "^1.12.2",
+    "chai": "^6.2.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.0"
+  }
+}

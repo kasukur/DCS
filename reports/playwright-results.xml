@@ -1,0 +1,56 @@
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="5.054763">
+<testsuite name="playwright-demo.spec.js" timestamp="2025-10-23T05:07:34.332Z" hostname="chromium" tests="2" failures="0" skipped="0" time="3.558" errors="0">
+<testcase name="API Test Demo with Playwright › OpenLibrary API Test" classname="playwright-demo.spec.js" time="0.82">
+<system-out>
+<![CDATA[✅ API Test completed successfully
+📊 Author: Sachi Rautroy
+🔑 Key: /authors/OL1A
+📝 Alternate names count: 13
+]]>
+</system-out>
+</testcase>
+<testcase name="API Test Demo with Playwright › Service NSW Website Check" classname="playwright-demo.spec.js" time="2.738">
+<system-out>
+<![CDATA[✅ UI Test completed successfully
+📸 Screenshot saved to reports/screenshots/
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="playwright-demo.spec.js" timestamp="2025-10-23T05:07:34.332Z" hostname="firefox" tests="2" failures="0" skipped="0" time="3.827" errors="0">
+<testcase name="API Test Demo with Playwright › OpenLibrary API Test" classname="playwright-demo.spec.js" time="0.837">
+<system-out>
+<![CDATA[✅ API Test completed successfully
+📊 Author: Sachi Rautroy
+🔑 Key: /authors/OL1A
+📝 Alternate names count: 13
+]]>
+</system-out>
+</testcase>
+<testcase name="API Test Demo with Playwright › Service NSW Website Check" classname="playwright-demo.spec.js" time="2.99">
+<system-out>
+<![CDATA[✅ UI Test completed successfully
+📸 Screenshot saved to reports/screenshots/
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="playwright-demo.spec.js" timestamp="2025-10-23T05:07:34.332Z" hostname="webkit" tests="2" failures="0" skipped="0" time="3.777" errors="0">
+<testcase name="API Test Demo with Playwright › OpenLibrary API Test" classname="playwright-demo.spec.js" time="0.817">
+<system-out>
+<![CDATA[✅ API Test completed successfully
+📊 Author: Sachi Rautroy
+🔑 Key: /authors/OL1A
+📝 Alternate names count: 13
+]]>
+</system-out>
+</testcase>
+<testcase name="API Test Demo with Playwright › Service NSW Website Check" classname="playwright-demo.spec.js" time="2.96">
+<system-out>
+<![CDATA[✅ UI Test completed successfully
+📸 Screenshot saved to reports/screenshots/
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

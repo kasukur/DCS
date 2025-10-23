@@ -1,0 +1,745 @@
+[
+  {
+    "description": "  As a tester\n  I want to validate the OpenLibrary Author API response\n  So that I can ensure the API returns correct author information",
+    "elements": [
+      {
+        "description": "",
+        "id": "openlibrary-author-api-testing;validate-author-ol1a-details-from-openlibrary-api",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validate author OL1A details from OpenLibrary API",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I have initialized the API client",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I make a GET request to \"https://openlibrary.org/authors/OL1A.json\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the response status code should be 200",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the response body should contain \"personal_name\" with value \"Sachi Rautroy\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response body should contain \"alternate_names\" array with value \"Yugashrashta Sachi Routray\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "openlibrary-author-api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OpenLibrary Author API Testing",
+    "tags": [],
+    "uri": "features/api/openlibrary_author.feature"
+  },
+  {
+    "description": "  As a user\n  I want to calculate motor vehicle stamp duty\n  So that I can determine the duty payable for my vehicle registration",
+    "elements": [
+      {
+        "description": "",
+        "id": "nsw-motor-vehicle-stamp-duty-calculator;calculate-motor-vehicle-stamp-duty-for-different-vehicle-prices",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Calculate motor vehicle stamp duty for different vehicle prices",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the Service NSW Motor Vehicle Stamp Duty page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the \"Check online\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Motor Vehicle Registration calculator page with proper structure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I select \"Yes\" for passenger vehicle",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter \"10000\" as the purchase price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the Calculate button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Expected Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Passenger Vehicle",
+                      "Yes"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Purchase Price",
+                      "$10,000.00"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duty Payable",
+                      "$300.00"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the calculation result modal with:",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nsw-motor-vehicle-stamp-duty-calculator;calculate-motor-vehicle-stamp-duty-for-different-vehicle-prices",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Calculate motor vehicle stamp duty for different vehicle prices",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the Service NSW Motor Vehicle Stamp Duty page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the \"Check online\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Motor Vehicle Registration calculator page with proper structure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I select \"Yes\" for passenger vehicle",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter \"24999\" as the purchase price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the Calculate button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Expected Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Passenger Vehicle",
+                      "Yes"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Purchase Price",
+                      "$24,999.00"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duty Payable",
+                      "$750.00"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the calculation result modal with:",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nsw-motor-vehicle-stamp-duty-calculator;calculate-motor-vehicle-stamp-duty-for-different-vehicle-prices",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Calculate motor vehicle stamp duty for different vehicle prices",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the Service NSW Motor Vehicle Stamp Duty page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the \"Check online\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Motor Vehicle Registration calculator page with proper structure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I select \"Yes\" for passenger vehicle",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter \"50000\" as the purchase price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the Calculate button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Expected Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Passenger Vehicle",
+                      "Yes"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Purchase Price",
+                      "$50,000.00"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duty Payable",
+                      "$1,600.00"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the calculation result modal with:",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nsw-motor-vehicle-stamp-duty-calculator;calculate-motor-vehicle-stamp-duty-for-different-vehicle-prices",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Calculate motor vehicle stamp duty for different vehicle prices",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the Service NSW Motor Vehicle Stamp Duty page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the \"Check online\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Motor Vehicle Registration calculator page with proper structure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I select \"Yes\" for passenger vehicle",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter \"100000\" as the purchase price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the Calculate button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Expected Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Passenger Vehicle",
+                      "Yes"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Purchase Price",
+                      "$100,000.00"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duty Payable",
+                      "$4,100.00"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the calculation result modal with:",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nsw-motor-vehicle-stamp-duty-calculator;calculate-motor-vehicle-stamp-duty-for-different-vehicle-prices",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Calculate motor vehicle stamp duty for different vehicle prices",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the Service NSW Motor Vehicle Stamp Duty page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the \"Check online\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Motor Vehicle Registration calculator page with proper structure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I select \"No\" for passenger vehicle",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter \"15000\" as the purchase price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the Calculate button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Expected Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Passenger Vehicle",
+                      "No"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Purchase Price",
+                      "$15,000.00"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duty Payable",
+                      "$450.00"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the calculation result modal with:",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nsw-motor-vehicle-stamp-duty-calculator;calculate-motor-vehicle-stamp-duty-for-different-vehicle-prices",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Calculate motor vehicle stamp duty for different vehicle prices",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the Service NSW Motor Vehicle Stamp Duty page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the \"Check online\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Motor Vehicle Registration calculator page with proper structure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I select \"No\" for passenger vehicle",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter \"30000\" as the purchase price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the Calculate button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Expected Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Passenger Vehicle",
+                      "No"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Purchase Price",
+                      "$30,000.00"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duty Payable",
+                      "$900.00"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the calculation result modal with:",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "nsw-motor-vehicle-stamp-duty-calculator",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "NSW Motor Vehicle Stamp Duty Calculator",
+    "tags": [],
+    "uri": "features/motor_vehicle_duty.feature"
+  }
+]
